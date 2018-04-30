@@ -20,6 +20,6 @@ function displayCommits() {
   
 }
 
-function getCommits() {
+function getCommits(repo) {
   
 }
