@@ -20,6 +20,11 @@ function displayCommits() {
   
 }
 
-function getCommits(repo) {
-  
+function getCommits(el) {
+  const name = el.dataset.repo;
+  const username = el.dataset.
+  const req = new XMLHttpRequest();
+  req.addEventListener("load", showCommits);
+  req.open("GET", 'https://api.github.com/repos/octocat/' + name + '/commits')
+  req.send()
 }
