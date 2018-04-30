@@ -8,7 +8,8 @@ function displayRepositories() {
     const dataRepoName = 'data-repository="' + repo.name + '"';
     return (
       <li>
-        <h2> ${repo.name} </h2)
+        <h2> ${repo.name} </h2
+        <a href=""
     '<li>' + r.name + ' - <a href="#" data-repo="' + r.name + ' data-username="' + r.owner.login +  '" onclick="getCommits(this)">Get Commits</a></li>').join('')}</ul>`;
   document.getElementById("repositories").innerHTML = repoList;
 }
