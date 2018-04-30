@@ -1,4 +1,4 @@
-let username = document.getElementById("username");
+
 
 function showRepositories() {
   let repos = JSON.parse(this.responseText);
@@ -8,6 +8,7 @@ function showRepositories() {
 }
 
 function getRepositories() {
+  let username = document.getElementById("username");
   const req = new XMLHttpRequest();
   req.addEventListener("load", showRepositories);
   req.open(`https://api.github/users/${username}/repos`);
