@@ -1,6 +1,9 @@
 let username = document.getElementById("username");
 
-
+function showRepositories() {
+  let repos = JSON.parse(this.responseText);
+  
+}
 
 function getRepositories() {
   const req = new XMLHttpRequest();
