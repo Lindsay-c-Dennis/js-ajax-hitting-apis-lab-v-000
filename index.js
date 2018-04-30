@@ -8,7 +8,7 @@ function displayRepositories() {
     const dataRepoName = 'data-repository="' + repo.name + '"';
     return (
       <li>
-        <h2> ${repo.name} </h2
+        <h2>${repo.name} </h2
         <a href="${repo.html_url}">${repo.html_url}</a>
         <a href="#" ${dataRepoName} ${dataUsername} onclick="getCommits(this)">Get Commits</a>
         )
