@@ -12,7 +12,8 @@ function displayRepositories() {
         <a href="${repo.html_url}">${repo.html_url}</a>
         <a href="#" ${dataRepoName} ${dataUsername} onclick="getCommits(this)">Get Commits</a><br>
         <a href="#" ${dataRepoName} ${dataUsername} onclick="getBranches(this)">Get Branches</a><br>
-      </ul>  
+      </li>
+      
         )
         
   document.getElementById("repositories").innerHTML = repoList;
