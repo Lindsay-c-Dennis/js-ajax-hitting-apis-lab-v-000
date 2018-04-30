@@ -1,1 +1,1 @@
-let username = document.getElementById("username-form")
+let username = document.getElementById("username");
