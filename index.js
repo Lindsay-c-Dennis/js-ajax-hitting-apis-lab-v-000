@@ -14,8 +14,7 @@ function displayRepositories() {
         <a href="#" ${dataRepoName} ${dataUsername} onclick="getBranches(this)">Get Branches</a><br>
       </li>
       )
-    }).join('') + "</ul>
-        
+    }).join('') + "</ul>;
   document.getElementById("repositories").innerHTML = repoList;
 }
 
