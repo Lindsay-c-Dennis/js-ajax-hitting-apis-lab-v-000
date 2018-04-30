@@ -9,6 +9,7 @@ function showRepositories() {
 
 function getRepositories() {
   let username = document.getElementById("username");
+  let url = "https"
   const req = new XMLHttpRequest();
   req.addEventListener("load", showRepositories);
   req.open(`https://api.github/users/${username}/repos`);
