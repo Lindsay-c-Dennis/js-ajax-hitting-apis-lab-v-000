@@ -1,10 +1,10 @@
 
 
 function displayRepositories() {
-   const repos = JSON.parse(this.responseText)
+   const repos = JSON.parse(this.responseText);
   const repoList = "<ul>" + repos.map(repo => {
-    const dataUsername = 'data-username="' + repo.owner.login + '"'
-    const dataRepoName = 'data-repository="' + repo.name + '"'
+    const dataUsername = 'data-username="' + repo.owner.login + '"';
+    const dataRepoName = 'data-repository="' + repo.name + '"';
     return(`
           <li>
             <h2>${repo.name}</h2>
