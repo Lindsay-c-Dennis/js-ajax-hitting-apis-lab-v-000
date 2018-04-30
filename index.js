@@ -19,3 +19,7 @@ function getRepositories() {
 function displayCommits() {
   
 }
+
+function getCommits() {
+  
+}
